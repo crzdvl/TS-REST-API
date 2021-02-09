@@ -1,0 +1,25 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb-typescript/base"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "parserOptions": {
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "./",
+        "sourceType": "module"
+    },
+    "rules": {
+        "import/prefer-default-export": 0,
+        "import/no-cycle": 0,
+        "max-len": [0, 120, 4],
+        "consistent-return": 0,
+        "no-underscore-dangle": 0,
+        "@typescript-eslint/no-unused-vars": 0
+    }
+}
